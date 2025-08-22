@@ -14,7 +14,7 @@ function App() {
         </header>
 
         <section className="nav">
-            <div className="title">Golden Hour Studios</div>
+            <div className="title">Rachel Renee Photography</div>
             <div className="navigations">
                 <Link className="btn-link" to="/home">Home</Link>
                 <Link className="btn-link" to="/about">About</Link>
@@ -37,7 +37,7 @@ function App() {
           <div className="footer-section">
             <div className="about">
               <h3 className="title">
-                GOLDEN HOUR STUDIOS
+                RACHEL RENEE PHOTOGRAPHY
               </h3>
               <p>
                 Professional photography services capturing life's most precious moments 
@@ -69,7 +69,7 @@ function App() {
           
           <div className="copyright">
             <p className="">
-              © 2025 Golden Hour Studios. All rights reserved.
+              © 2025 Rachel Renee Photography. All rights reserved.
             </p>
           </div>
         </footer>
