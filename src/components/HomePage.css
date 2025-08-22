@@ -73,7 +73,7 @@
 }
 
 .primary-btn:hover {
-  background: #b8941f;
+  opacity: 0.8;
 }
 
 .outline-btn {
@@ -137,6 +137,9 @@
   text-align: left;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .work-card:hover {
