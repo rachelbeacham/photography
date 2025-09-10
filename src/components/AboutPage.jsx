@@ -40,14 +40,13 @@ const AboutPage = () => {
             <div className="divider"></div>
             <p className="hero-paragraph">
               Welcome to my world of photography. I'm a passionate photographer
-              dedicated to capturing life's most precious moments with artistry
-              and authenticity.
+              dedicated to capturing life's fleeting blips. The ones that seem insignificant
+              at the time, but later on, they mean everything.
             </p>
             <p className="hero-paragraph">
-              With over a decade of experience, I specialize in portrait,
-              wedding, and street photography, bringing a unique perspective to
-              every shoot. My goal is to create timeless images that you'll
-              treasure forever.
+              I love shooting portrait, wedding, and street/lifestyle photography, 
+              bringing a unique perspective to every shoot. My goal is to create 
+              timeless images that you'll treasure forever.
             </p>
             <Link className="btn-link primary-button" to="/contact">Work With Me</Link>
 
@@ -55,7 +54,7 @@ const AboutPage = () => {
           <div className="hero-image">
             <div className="image-border"></div>
             <img
-              src="https://images.unsplash.com/photo-1643968612613-fd411aecd1fd"
+              src="/images/portraits/me.jpeg"
               alt="Professional Photographer"
               className="main-photo"
             />
