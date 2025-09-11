@@ -7,22 +7,23 @@ const HomePage = () => {
       id: 1,
       title: "Portrait Sessions",
       category: "Portraits",
-      image:
-        "https://images.unsplash.com/photo-1594171549465-a28ba0220a1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      image: "/images/portraits/ruby.jpeg",
+      link: "/galleries#portraits",
     },
     {
       id: 2,
-      title: "Wedding Photography",
+      title: "Wedding & Events",
       category: "Weddings",
       image:
         "https://images.unsplash.com/photo-1722872112546-936593441be8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      link: '/galleries#weddings'
     },
     {
       id: 3,
-      title: "Lifestyle/Street Photography",
-      category: "Fashion",
-      image:
-        "https://images.unsplash.com/photo-1721003080968-9923474ad739?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      title: "Lifestyle & Street",
+      category: "Street Photography",
+      image: "/images/street/tori.jpeg",
+      link: "/galleries#street"
     },
   ];
 
@@ -32,7 +33,7 @@ const HomePage = () => {
       <section className="hero">
         <div className="hero-overlay"></div>
         <img
-          src="https://images.unsplash.com/photo-1594171549465-a28ba0220a1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+          src="/images/street/sunset.jpeg"
           alt="Professional Photography"
           className="hero-image"
         />
@@ -67,7 +68,7 @@ const HomePage = () => {
 
         <div className="featured-grid">
           {featuredWorks.map((work) => (
-            <Link key={work.id} className="work-card" to="/galleries">
+            <Link key={work.id} className="work-card" to={work.link}>
               <div className="work-image-wrapper">
                 <img src={work.image} alt={work.title} className="work-image" />
                 <div className="work-overlay"></div>
