@@ -21,7 +21,7 @@
 .gallery-grid img {
   width: 100%;
   height: auto;
-  max-height: 700px;
+  max-height: 675px;
   border-radius: 8px;
   object-fit: cover;
 }

@@ -112,7 +112,9 @@ textarea {
 
 .info-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   gap: 1.5rem;
 }
 

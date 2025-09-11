@@ -5,8 +5,8 @@ const GalleriesPage = () => {
   return (
     <div className="galleries-container">
       {/* Portraits Section */}
-      <section id="portraits" className="gallery-section">
-        <h2>Portraits</h2>
+      <section className="gallery-section">
+        <h2 id="portraits">Portraits</h2>
         <div className="gallery-grid">
           <img src="/images/portraits/ruby_stephen.jpeg" alt="Portrait 1" />
           <img src="/images/portraits/ruby.jpeg" alt="Portrait 2" />
@@ -15,8 +15,8 @@ const GalleriesPage = () => {
       </section>
 
       {/* Street / Lifestyle Section */}
-      <section id="street" className="gallery-section">
-        <h2>Street & Lifestyle</h2>
+      <section className="gallery-section">
+        <h2 id="street">Street & Lifestyle</h2>
         <div className="gallery-grid">
           <img src="/images/street/car.jpeg" alt="Street 1" />
           <img src="/images/street/pool.jpeg" alt="Street 2" />
