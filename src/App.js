@@ -14,7 +14,7 @@ function App() {
         </header>
 
         <section className="nav">
-            <div className="title">Rachel Renee Photography</div>
+            <Link className='title btn-link' to="/home">Rachel Renee Photography</Link>
             <div className="navigations">
                 <Link className="btn-link" to="/home">Home</Link>
                 <Link className="btn-link" to="/about">About</Link>

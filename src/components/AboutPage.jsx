@@ -106,7 +106,7 @@ const AboutPage = () => {
         <div className="experience-list">
           <div className="experience-card">
             <div className="experience-header-line">
-              <h3 className="experience-role">Professional Photographer</h3>
+              <h3 className="experience-role">Aspiring Photographer</h3>
               <span className="experience-date">2025 - Present</span>
             </div>
             <p className="experience-text">

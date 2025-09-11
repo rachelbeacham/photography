@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import "./ContactPage.css";
+import emailjs from "emailjs-com";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -25,20 +26,35 @@ const ContactPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setIsSubmitted(true);
 
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        sessionType: "",
-        date: "",
-        message: "",
-      });
-    }, 3000);
+    emailjs
+      .send(
+        "service_rrenee_photo",  //service_id
+        "template_kldcp1a",  //template_id
+        formData,
+        "DsN2o9Om8pO2CBVNT" //public_key
+      )
+      .then(
+        (result) => {
+          console.log("Email sent:", result.text);
+          setIsSubmitted(true);
+
+          setTimeout(() => {
+            setIsSubmitted(false);
+            setFormData({
+              name: "",
+              email: "",
+              phone: "",
+              sessionType: "",
+              date: "",
+              message: "",
+            });
+          }, 3000);
+        },
+        (error) => {
+          console.error("Email error:", error.text);
+        }
+      );
   };
 
   const contactInfo = [
@@ -213,7 +229,7 @@ const ContactPage = () => {
                   consultation call
                 </li>
                 <li>
-                  <span className="step">3</span> Contract signing and 50%
+                  <span className="step">3</span> 50%
                   deposit secures your date
                 </li>
                 <li>
