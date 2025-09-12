@@ -186,3 +186,25 @@
   background: #000;
   color: #fff;
 }
+
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr; /* stack items */
+    text-align: center;
+  }
+
+  .hero-image {
+    order: -1; /* ensure image goes on top */
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-paragraph {
+    font-size: 1rem;
+  }
+}
