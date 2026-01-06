@@ -44,7 +44,7 @@ const AboutPage = () => {
               at the time, but later on, they mean everything.
             </p>
             <p className="hero-paragraph">
-              I love shooting portrait, wedding, and street/lifestyle photography, 
+              I love shooting portrait, wedding, and travel/street photography, 
               bringing a unique perspective to every shoot. My goal is to create 
               timeless images that you'll treasure forever.
             </p>
@@ -110,7 +110,7 @@ const AboutPage = () => {
               <span className="experience-date">2025 - Present</span>
             </div>
             <p className="experience-text">
-              Specializing in portrait, wedding, and street photography. Worked
+              Specializing in portrait, wedding, and travel/street photography. Worked
               with numerous clients to capture their most important moments with
               creativity and professionalism.
             </p>
