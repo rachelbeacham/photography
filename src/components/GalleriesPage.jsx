@@ -9,7 +9,7 @@ const GalleriesPage = () => {
         <h2 id="portraits">Portraits</h2>
         <div className="gallery-grid">
           <img src="/images/portraits/ruby_stephen.jpeg" alt="Portrait 1" />
-          <img src="/images/portraits/ruby.jpeg" alt="Portrait 2" />
+          <img src="/images/portraits/yitzhaki.jpeg" alt="Portrait 2" />
           <img src="/images/portraits/ruby_stephen2.jpeg" alt="Portrait 3" />
         </div>
       </section>
@@ -24,6 +24,9 @@ const GalleriesPage = () => {
           <img src="/images/street/bike.jpeg" alt="Street 4" />
           <img src="/images/street/fuji.jpeg" alt="Street 5" />
           <img src="/images/street/sunset2.jpeg" alt="Street 6" />
+          <img src="/images/street/bamboo.jpeg" alt="Street 8" />
+          <img src="/images/street/seoul.jpeg" alt="Streen 9" />
+          <img src="/images/street/pakbaz.jpeg" alt="Streen 10" />
         </div>
       </section>
 
