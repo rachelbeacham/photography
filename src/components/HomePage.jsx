@@ -7,23 +7,32 @@ const HomePage = () => {
       id: 1,
       title: "Portrait Sessions",
       category: "Portraits",
-      image: "/images/portraits/ruby.jpeg",
+      image: "/images/portraits/ramos.jpeg",
       link: "/galleries#portraits",
     },
     {
       id: 2,
       title: "Wedding & Events",
       category: "Weddings",
-      image:
-        "https://images.unsplash.com/photo-1722872112546-936593441be8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      image: "/images/events/1221bride.jpeg",
       link: '/galleries#weddings'
     },
     {
       id: 3,
-      title: "Lifestyle & Street",
-      category: "Street Photography",
+      title: "Travel & Lifestyle",
+      category: "Travel & Lifestyle Photography",
       image: "/images/street/tori.jpeg",
-      link: "/galleries#street"
+      link: "/galleries#travel"
+    },
+  ];
+
+  const testimonials = [
+    {
+      id: 1,
+      quote:
+        "Rachel was excellent in her vision and exceeded my expectations. She captured the essence of motherhood and all that it comes with. She did this with patients and taking initiative on taking the pictures that were candid, real and authentic. Her ability to use a camera is quite unlike any other, given her creative ability and technical ability to take pictures that were not the easiest to take. My children were a big ball of energy and she really was open minded and patient throughout the process. The timing of receiving these photos in normal and appropriate range and I am very grateful for her service services that she provided. I highly recommend her services.",
+      name: "Cassandra Ramos",
+      role: "Portrait Client",
     },
   ];
 
@@ -85,6 +94,29 @@ const HomePage = () => {
           <Link to="/galleries" className="btn outline-btn">
             View All Galleries →
           </Link>
+        </div>
+      </section>
+
+      {/* Testimonials section */}
+      <section className="testimonials">
+        <div className="section-header">
+          <h2 className="section-title">KIND WORDS</h2>
+          <div className="divider"></div>
+          <p className="section-text">
+            What clients are saying about their experience
+          </p>
+        </div>
+
+        <div className="testimonials-grid">
+          {testimonials.map((testimonial) => (
+            <div key={testimonial.id} className="testimonial-card">
+              <p className="testimonial-quote">“{testimonial.quote}”</p>
+              <div className="testimonial-author">
+                <p className="testimonial-name">{testimonial.name}</p>
+                <p className="testimonial-role">{testimonial.role}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
