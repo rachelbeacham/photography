@@ -1,12 +1,25 @@
 import React from "react";
+import { useEffect } from "react";
 import "./GalleriesPage.css";
+import { useLocation } from "react-router-dom";
 
 const GalleriesPage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   return (
     <div className="galleries-container">
       {/* Portraits Section */}
-      <section className="gallery-section">
-        <h2 id="portraits">Portraits</h2>
+      <section id="portraits" className="gallery-section">
+        <h2>Portraits</h2>
         <div className="gallery-grid">
           <img src="/images/portraits/yitzhaki.jpeg" alt="Portrait 1" />
           <img src="/images/portraits/stephen.jpeg" alt="Portrait 2" />
@@ -31,8 +44,8 @@ const GalleriesPage = () => {
       </section>
 
       {/* Street / Lifestyle Section */}
-      <section className="gallery-section">
-        <h2 id="street">Street & Lifestyle</h2>
+      <section id="travel" className="gallery-section">
+        <h2>Travel & Lifestyle</h2>
         <div className="gallery-grid">
           <img src="/images/street/car.jpeg" alt="Street 1" />
           <img src="/images/street/pool.jpeg" alt="Street 2" />
