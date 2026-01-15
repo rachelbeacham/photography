@@ -8,9 +8,25 @@ const GalleriesPage = () => {
       <section className="gallery-section">
         <h2 id="portraits">Portraits</h2>
         <div className="gallery-grid">
-          <img src="/images/portraits/ruby_stephen.jpeg" alt="Portrait 1" />
-          <img src="/images/portraits/yitzhaki.jpeg" alt="Portrait 2" />
-          <img src="/images/portraits/ruby_stephen2.jpeg" alt="Portrait 3" />
+          <img src="/images/portraits/yitzhaki.jpeg" alt="Portrait 1" />
+          <img src="/images/portraits/stephen.jpeg" alt="Portrait 2" />
+          <img src="/images/portraits/balboa.jpeg" alt="Portrait 3" />
+          <img src="/images/portraits/ramos.jpeg" alt="Portrait 4" />
+          <img src="/images/portraits/ramos2.jpeg" alt="Portrait 5" />
+          <img src="/images/portraits/ramos3.jpeg" alt="Portrait 6" />
+        </div>
+      </section>
+
+      {/* Weddings & Events Section */}
+      <section id="weddings" className="gallery-section">
+        <h2>Weddings & Events</h2>
+        <div className="gallery-grid">
+          <img src="/images/events/1221veil.jpeg" alt="12.21.25 Wedding" />
+          <img src="/images/events/1221bride.jpeg" alt="12.21.25 Wedding" />
+          <img src="/images/events/1221brideandgroom.jpeg" alt="12.21.25 Wedding" />
+          <img src="/images/events/1221group1.jpeg" alt="12.21.25 Wedding" />
+          <img src="/images/events/1221group3.jpeg" alt="12.21.25 Wedding" />
+          <img src="/images/events/1221group2.jpeg" alt="12.21.25 Wedding" />
         </div>
       </section>
 
@@ -30,15 +46,6 @@ const GalleriesPage = () => {
         </div>
       </section>
 
-      {/* Weddings & Events Section */}
-      <section id="weddings" className="gallery-section">
-        <h2>Weddings & Events</h2>
-        <div className="gallery-grid">
-          {/* <img src="/images/wedding1.jpg" alt="Wedding 1" />
-          <img src="/images/wedding2.jpg" alt="Wedding 2" />
-          <img src="/images/wedding3.jpg" alt="Wedding 3" /> */}
-        </div>
-      </section>
     </div>
   );
 };
