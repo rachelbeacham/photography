@@ -34,6 +34,12 @@ const HomePage = () => {
       name: "Cassandra Ramos",
       role: "Portrait Client",
     },
+    {
+      id: 2,
+      quote: "Rachel is very sweet, patient and helpful! My daughter loved her pictures, this is the first time she ever lets anyone take pictures of her. She was very shy and just had no idea what to do but Rachel made her feel comfortable and she loosened up and we got the pictures we needed! I would definitely recommend her and will be booking with her again!",
+      name: "Jenn Angulo",
+      role: "Special Events Client",
+    }
   ];
 
   return (

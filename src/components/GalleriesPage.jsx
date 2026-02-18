@@ -1,7 +1,18 @@
-import React from "react";
-import { useEffect } from "react";
-import "./GalleriesPage.css";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import "./GalleriesPage.css";
+
+const Carousel = ({ images }) => {
+  return (
+    <div className="carousel">
+      {images.map((src, index) => (
+        <div className="carousel-slide" key={index}>
+          <img src={src} alt={`Gallery ${index + 1}`} />
+        </div>
+      ))}
+    </div>
+  );
+};
 
 const GalleriesPage = () => {
   const location = useLocation();
@@ -17,48 +28,54 @@ const GalleriesPage = () => {
 
   return (
     <div className="galleries-container">
-      {/* Portraits Section */}
       <section id="portraits" className="gallery-section">
         <h2>Portraits</h2>
-        <div className="gallery-grid">
-          <img src="/images/portraits/yitzhaki.jpeg" alt="Portrait 1" />
-          <img src="/images/portraits/stephen.jpeg" alt="Portrait 2" />
-          <img src="/images/portraits/balboa.jpeg" alt="Portrait 3" />
-          <img src="/images/portraits/ramos.jpeg" alt="Portrait 4" />
-          <img src="/images/portraits/ramos2.jpeg" alt="Portrait 5" />
-          <img src="/images/portraits/ramos3.jpeg" alt="Portrait 6" />
-        </div>
+        <Carousel
+          images={[
+            "/images/portraits/yitzhaki.jpeg",
+            "/images/portraits/stephen.jpeg",
+            "/images/portraits/balboa.jpeg",
+            "/images/portraits/ramos.jpeg",
+            "/images/portraits/ramos2.jpeg",
+            // "/images/portraits/ramos3.jpeg",
+            "/images/portraits/quinceportrait2.jpeg",
+            "/images/portraits/quinceportrait3.jpeg",
+          ]}
+        />
       </section>
 
-      {/* Weddings & Events Section */}
       <section id="weddings" className="gallery-section">
         <h2>Weddings & Events</h2>
-        <div className="gallery-grid">
-          <img src="/images/events/1221veil.jpeg" alt="12.21.25 Wedding" />
-          <img src="/images/events/1221bride.jpeg" alt="12.21.25 Wedding" />
-          <img src="/images/events/1221brideandgroom.jpeg" alt="12.21.25 Wedding" />
-          <img src="/images/events/1221group1.jpeg" alt="12.21.25 Wedding" />
-          <img src="/images/events/1221group3.jpeg" alt="12.21.25 Wedding" />
-          <img src="/images/events/1221group2.jpeg" alt="12.21.25 Wedding" />
-        </div>
+        <Carousel
+          images={[
+            "/images/events/1221veil.jpeg",
+            "/images/events/1221bride.jpeg",
+            "/images/events/1221brideandgroom.jpeg",
+            "/images/events/1221group1.jpeg",
+            // "/images/events/1221group3.jpeg",
+            "/images/events/1221group2.jpeg",
+            "/images/events/quince3.jpeg",
+            "/images/events/quince4.jpeg",
+          ]}
+        />
       </section>
 
-      {/* Street / Lifestyle Section */}
       <section id="travel" className="gallery-section">
         <h2>Travel & Lifestyle</h2>
-        <div className="gallery-grid">
-          <img src="/images/street/car.jpeg" alt="Street 1" />
-          <img src="/images/street/pool.jpeg" alt="Street 2" />
-          <img src="/images/street/tori.jpeg" alt="Street 3" />
-          <img src="/images/street/bike.jpeg" alt="Street 4" />
-          <img src="/images/street/fuji.jpeg" alt="Street 5" />
-          <img src="/images/street/sunset2.jpeg" alt="Street 6" />
-          <img src="/images/street/bamboo.jpeg" alt="Street 8" />
-          <img src="/images/street/seoul.jpeg" alt="Streen 9" />
-          <img src="/images/street/pakbaz.jpeg" alt="Streen 10" />
-        </div>
+        <Carousel
+          images={[
+            "/images/street/car.jpeg",
+            "/images/street/pool.jpeg",
+            "/images/street/tori.jpeg",
+            "/images/street/bike.jpeg",
+            "/images/street/fuji.jpeg",
+            "/images/street/sunset2.jpeg",
+            "/images/street/bamboo.jpeg",
+            "/images/street/seoul.jpeg",
+            "/images/street/pakbaz.jpeg",
+          ]}
+        />
       </section>
-
     </div>
   );
 };
