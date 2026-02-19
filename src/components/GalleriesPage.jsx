@@ -7,7 +7,7 @@ const Carousel = ({ images }) => {
     <div className="carousel">
       {images.map((src, index) => (
         <div className="carousel-slide" key={index}>
-          <img src={src} alt={`Gallery ${index + 1}`} />
+          <img src={src} alt={`Gallery ${index + 1}`} loading="lazy" />
         </div>
       ))}
     </div>

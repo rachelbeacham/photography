@@ -41,7 +41,7 @@ function App() {
               </h3>
               <p>
                 Professional photography services capturing life's most precious moments 
-                with artistry and authenticity.
+                with artistry and authenticity. Based in San Diego, California.
               </p>
             </div>
             
@@ -60,7 +60,7 @@ function App() {
                 CONTACT INFO
               </h4>
               <div className="">
-                <p className="">San Diego, CA 92101</p>
+                <p className="">San Diego, CA 92104</p>
                 <p className="">(916) 770-9885</p>
                 <p className="">rachelbeacham17@gmail.com</p>
               </div>

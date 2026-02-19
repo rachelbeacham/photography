@@ -59,6 +59,9 @@ const HomePage = () => {
           <p className="hero-subtitle">
             Professional Photography that tells your story
           </p>
+          <p className="hero-subtitle">
+            Based in San Diego, California
+          </p>
           <div className="hero-buttons">
             <Link to="/galleries" className="btn primary-btn">
               View Galleries →
